@@ -1,0 +1,36 @@
+Part-A: Basic (revision & confidence build) 
+1. Sum of two numbers 
+2. Print "Hello <name>" 
+3. Even/Odd check 
+4. Celsius → Fahrenheit 
+5. Max among 3 numbers 
+6. Find string length 
+7. Toggle boolean 
+8. Concatenate strings 
+9. Positive/Negative/Zero 
+10. var / let / const example 
+11. Multiplication table 
+12. Sum of first 10 natural numbers 
+13. Switch-case → day name 
+14. Function → Factorial 
+15. Function → Voting eligibility 
+Part-B: Moderate (more thinking required) 
+16. Write a function to check whether a number is prime or not. 
+17. Write a program to print sum of digits of a number. (e.g., 123 → 6) 
+18. Write a function to reverse a string without using reverse(). 
+19. Take user marks & print Grade using conditions: 
+• ≥90 A 
+• ≥75 B 
+• ≥50 C 
+• else Fail 
+20. Create a function which takes *two numbers & an operator (+, -, , /) and performs 
+operation. 
+21. Write a function to count vowels in a string. 
+22. Print the Fibonacci series up to n terms. 
+23. Write a function that returns minimum and maximum from an array. 
+24. Use switch-case to build a Simple Menu Program: 
+1. Add 
+2. Sub 
+3. Mul 
+4. Div 
+25. Create a function that checks if a number is Armstrong number or not.
