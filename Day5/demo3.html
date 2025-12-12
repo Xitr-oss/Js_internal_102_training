@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bid1">red</button>
+    <button id="bid2">green</button>
+    <button id="bid3">yellow</button>
+
+    <script>
+        document.getElementById("bid1").addEventListener("click",function(){
+           document.querySelector("body").style.backgroundColor="red";
+        });
+        document.getElementById("bid2").addEventListener("click",function(){
+           document.querySelector("body").style.backgroundColor="green";
+        });
+        document.getElementById("bid3").addEventListener("click",function(){
+           document.querySelector("body").style.backgroundColor="yellow";
+        });
+        
+    </script>
+</body>
+</html>

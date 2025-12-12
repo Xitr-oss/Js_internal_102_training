@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example of dom with js</title>
+</head>
+<body>
+    <form id="fid" action="">
+        <input id="nameid" type="text" placeholder="Enter name"><br>
+        <input id="passid" type="passsword" placeholder="Enter password"><br>
+        <button type="submit">submit</button>
+    </form>
+    <p id="pid"></p>
+
+    <script>
+        document.getElementById("fid").addEventListener("submit",function(event){
+            event.preventDefault();
+            let nameValue=document.getElementById("nameid").value.trim();
+            let error=document.getElementById("pid");
+            if(nameValue===""){
+                error.innerHTML="name required";
+                error.style.color="red";
+            }
+            else{
+                error.style.color="green";
+                error.innerHTML="name accepted";
+
+            }
+        });
+
+    </script>
+    
+</body>
+</html>
