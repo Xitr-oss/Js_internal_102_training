@@ -7,10 +7,13 @@
 </head>
 <body>
     <h1 id="hd1">this is next page</h1>
+    <h2 id="hd2">this is the password</h2>
     <script>
         let params = new URLSearchParams(window.location.search);
         let na=params.get("firstName");
-        document.getElementById("hd1").innerHTML=`this is ${na}`;
+        document.getElementById("hd1").innerHTML=`welcome ${na}`;
+        let pa=params.get("password");
+        document.getElementById("hd2").innerHTML=`this is password ${pa}`;
     </script>
 </body>
 </html>

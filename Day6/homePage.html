@@ -9,21 +9,35 @@
             display:flex;
             flex-direction: column;
         }
-        .container{
+        .body-container{
             display:flex;
             flex-direction: row;
             background-color: lightblue;
-            flex:1;
 
         }
         .header-container{
             display:flex;
             flex-direction:row;
-            justify-content: space-between;
-            flex:1;
+            background-color: rgb(246, 237, 237);
+            
+            
+        }
+        .notice-sec{
+            background-color: rgb(124, 176, 176);
         }
         .notice-sec,.left-sec, .login-sec{
             flex:1;
+            justify-items: center;
+            
+        }
+        .logo, .heading{
+            flex:1;
+            justify-items: center;
+            border-color: black;
+        }
+        .logo{
+            background-color: rgba(187, 187, 192, 0.98);      
+            
         }
         button{
             margin-top:20px;
@@ -38,22 +52,22 @@
             <p>logoL</p>
         </div>
         <div class="heading">
-            <p>hcl training</p>
+            <p><h1>HCL training</h1></p>
         </div>
         <div class="logo">
             <p>logoR</p>
         </div>
     </div>
-    <div class ="container">
+    <div class ="body-container">
         <div class="left-sec">
-            <h1>left section</h1>
+            <h1>Left section</h1>
         </div>
-        <div class="notice-sec"><h3>Notice</h3></div>
+        <div class="notice-sec"><h1>Notice</h1></div>
         <div class="login-sec">
             <form action="nxt.html" method="get">
-                <h3>Login</h3>
+                <h2>Login</h2>
                 <p>UserId</p><input name="firstName" type="text" placeholder="enter useId"><br>
-                <p>Password</p><input type="password" placeholder="enter password"><br>
+                <p>Password</p><input name="password" type="password" placeholder="enter password"><br>
                 <button>submit</button>
             </form>
             
