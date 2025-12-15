@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hd1">this is next page</h1>
+    <script>
+        let params = new URLSearchParams(window.location.search);
+        let na=params.get("firstName");
+        document.getElementById("hd1").innerHTML=`this is ${na}`;
+    </script>
+</body>
+</html>

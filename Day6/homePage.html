@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+        }
+        .container{
+            display:flex;
+            flex-direction: row;
+            background-color: lightblue;
+            flex:1;
+
+        }
+        .header-container{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+            flex:1;
+        }
+        .notice-sec,.left-sec, .login-sec{
+            flex:1;
+        }
+        button{
+            margin-top:20px;
+            margin-right:10px
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="logo">
+            <p>logoL</p>
+        </div>
+        <div class="heading">
+            <p>hcl training</p>
+        </div>
+        <div class="logo">
+            <p>logoR</p>
+        </div>
+    </div>
+    <div class ="container">
+        <div class="left-sec">
+            <h1>left section</h1>
+        </div>
+        <div class="notice-sec"><h3>Notice</h3></div>
+        <div class="login-sec">
+            <form action="nxt.html" method="get">
+                <h3>Login</h3>
+                <p>UserId</p><input name="firstName" type="text" placeholder="enter useId"><br>
+                <p>Password</p><input type="password" placeholder="enter password"><br>
+                <button>submit</button>
+            </form>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
