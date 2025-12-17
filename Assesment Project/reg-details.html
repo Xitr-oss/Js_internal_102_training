@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Successful</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        .box {
+            width: 400px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: green;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Registration Successful!</h2>
+    <p><b>Name:</b> <span id="name"></span></p>
+    <p><b>Email:</b> <span id="email"></span></p>
+    <p><b>Gender:</b> <span id="gender"></span></p>
+    <p><b>Course:</b> <span id="course"></span></p>
+</div>
+
+<script>
+    // Using URLSearchParams to get values directly from URL
+    let params = new URLSearchParams(window.location.search);
+
+    // Just display whatever is passed in URL
+    document.getElementById("name").innerText = params.get("name");
+    document.getElementById("email").innerText = params.get("email");
+    document.getElementById("gender").innerText = params.get("gender");
+    document.getElementById("course").innerText = params.get("course");
+</script>
+
+</body>
+</html>

@@ -12,14 +12,14 @@
         .body-container{
             display:flex;
             flex-direction: row;
-            background-color: lightblue;
 
         }
         .header-container{
             display:flex;
             flex-direction:row;
-            background-color: rgb(246, 237, 237);
-            
+            background-color: rgb(10, 16, 121);
+            color:white;
+            border-radius:20px;
             
         }
         .notice-sec{
@@ -28,35 +28,45 @@
         .notice-sec,.left-sec, .login-sec{
             flex:1;
             justify-items: center;
+            border-radius:20px
             
+        }
+        .left-sec{
+            background-color: rgb(124, 176, 176);
+            margin-left: 10px;
+            margin-right:10px;
         }
         .logo, .heading{
             flex:1;
             justify-items: center;
-            border-color: black;
-        }
-        .logo{
-            background-color: rgba(187, 187, 192, 0.98);      
+            border-color: black;   
             
+        }
+        .login-sec{
+            background-color: rgb(124, 176, 176);
+            padding :10px;
+            margin-left: 10px;
+            margin-right:10px;
         }
         button{
             margin-top:20px;
             margin-right:10px
         }
-
+        input,button{
+            border-radius:4px;
+            height:25px;
+            border-style: solid;
+            margin-bottom:10px;
+        }
+        
     </style>
 </head>
 <body>
     <div class="header-container">
-        <div class="logo">
-            <p>logoL</p>
-        </div>
         <div class="heading">
             <p><h1>HCL training</h1></p>
         </div>
-        <div class="logo">
-            <p>logoR</p>
-        </div>
+       
     </div>
     <div class ="body-container">
         <div class="left-sec">
@@ -66,15 +76,25 @@
         <div class="login-sec">
             <form id="fid" action="nxt.html" method="get">
                 <h2>Login</h2>
-                <p>UserId</p><input name="firstName" type="text" placeholder="enter useId"><br>
-                <p>Password</p><input name="password" type="password" placeholder="enter password"><br>
+                <p>UserId</p><input id="name" name="firstName" type="text" placeholder="enter useId"><br>
+                <p>Password</p><input id="pass" name="password" type="password" placeholder="enter password"><br>
                 <button>submit</button>
+                <br>
+                <a href="registration.html">Signup & Registration</a>
             </form>
             
         </div>
     </div>
     <script>
         
+        document.getElementById("fid").addEventListener("submit", function (event) {
+        let name = document.getElementById("name").value.trim();
+        let pass = document.getElementById("pass").value.trim();
+            if (name === "" || pass === "") {
+                alert("Please fill all details");
+                event.preventDefault(); // stops page navigation
+            }
+        });
     </script>
 
 </body>
