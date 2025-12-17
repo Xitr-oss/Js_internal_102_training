@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<button><>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height:50px;
+            width:50px;
+            border-style:solid;
+            border-radius: 25px;
+            align-items: center;
+            justify-content:space-between;
+            margin:10px;
+
+        }
+        #red{
+            background-color:rgba(209, 9, 9, 0.935);
+            color:white;
+        }
+        #green{
+            background-color:rgb(5, 109, 5);
+            color:white;
+
+        }
+        #blue{
+            color:white;
+            background-color:rgb(14, 14, 142);
+        }
+        #conatiner{
+            border-style: solid;
+            height:210px;
+            width:70px;
+            border-radius:24px;
+        }
+        #full{
+            justify-content:center;
+        }
+    </style>
+</head>
+<body id="full" >
+    <div id="conatiner">
+        <button id="red">Red</button>
+        <button id="green">Green</button>
+        <button id="blue">Blue</button>
+    </div>
+
+    <script>
+        document.getElementById("red").addEventListener("click",function(){
+            document.getElementById("full").style.backgroundColor="red";
+        })
+        document.getElementById("green").addEventListener("click",function(){
+            document.getElementById("full").style.backgroundColor="green";
+        })
+        document.getElementById("blue").addEventListener("click",function(){
+            document.getElementById("full").style.backgroundColor="blue";
+        })
+    </script>
+
+</body>
+</html>
