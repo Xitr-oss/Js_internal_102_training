@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h3>Name:</h3><input id="input-box" type="text">
+        <button id="submit-button">Submit</button>
+        <div id="output-box">
+
+        </div>
+    </form>
+    <script>
+        document.getElementById("submit-button").addEventListener("click",function(e){
+            e.preventDefault();
+            let message=document.getElementById("input-box").value;
+            document.getElementById("output-box").innerText=message;
+            
+        });
+    </script>
+</body>
+</html>
