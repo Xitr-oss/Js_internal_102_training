@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Welcome to JS !!</p><br>
+
+    <button id="toogle-button">
+        HIDE
+    </button>
+    <script>
+        let button=document.getElementById("toogle-button");
+        
+        document.getElementById("toogle-button").addEventListener("click",function(){
+            if(button.innerText.trim()==="HIDE"){
+                document.getElementById("para").style.display="none";
+                button.innerHTML ="SHOW";
+                console.log(button);
+        
+            }else{
+            
+                document.getElementById("para").style.display="block";
+                button.innerHTML ="HIDE";
+                console.log(button);
+            }
+        });
+        
+    
+        
+    </script>
+</body>
+</html>
